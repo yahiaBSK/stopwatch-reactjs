@@ -1,0 +1,102 @@
+* {
+  box-sizing: content-box;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: rgb(47, 79, 79);
+  position: relative;
+  height: fit-content;
+}
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.mainSwatchDiv {
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(43, 72, 72);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: -10px -10px 0px rgba(0, 0, 0, 0.501);
+  transition: 0.25s ease-in-out;
+  margin: 10% 10%;
+}
+.mainSwatchDiv:hover {
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.496);
+}
+.time {
+  color: white;
+  font-size: 250%;
+  font-weight: 900;
+  text-shadow: 10px 10px 0px rgba(0, 0, 0, 0.496);
+  margin: 30px;
+  margin-bottom: 0;
+}
+.btnDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+}
+.btnDiv button {
+  border: none;
+  margin: 15px;
+  padding: 15px;
+  width: 6rem;
+  height: 1.7rem;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  box-shadow: -5px -5px 0px rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+.startBtn {
+  background-color: rgb(0, 128, 0);
+}
+.stopBtn {
+  background-color: rgb(129, 0, 0);
+}
+.resetBtn {
+  background-color: rgb(138, 43, 226);
+}
+.btnDiv button:hover {
+  box-shadow: 5px 5px 0px rgb(255, 255, 255);
+}
+.btnDiv button:focus {
+  box-shadow: 0px 0px 0px 5px rgb(255, 255, 255);
+  transition: 0.25s;
+  animation: animation 0.25s ease-in-out;
+}
+
+/*-------------------------Footer-------------------------*/
+.footer {
+  position: absolute;
+  text-align: center;
+  background-color: rgb(43, 72, 72);
+  width: 100vw;
+  bottom: 0;
+  box-shadow: 0 0 0 2.5px rgb(39, 67, 67);
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+.footer p {
+  color: white;
+  font-style: oblique;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+/*-------------------------End Footer-------------------------*/
